@@ -15,12 +15,12 @@ const b=a.destinations.find((r)=>r.name===destinationName);
 console.log(b)
   return (
     <div className="homepage">
-        <h2 style={{color:"white"}}>{destinationName}</h2>
+        <h2 style={{color:"white", alignSelf:"center"}}>{destinationName}</h2>
     <div className="description">
       <div>
         <img alt="img" src={b.image} className="image-container"/>
       </div>
-      <div>
+      <div className="des-desc">
        <p>Description: {b.description}</p>
        <p>Ratings: {b.ratings}</p>
        <p>Reviews: {b.reviews}</p>

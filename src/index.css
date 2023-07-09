@@ -66,5 +66,15 @@ body{
 }
 
 .description{
-  color:white
+  color: white;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.des-desc{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
