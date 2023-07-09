@@ -1,16 +1,33 @@
-// import { MdLocationOn } from "react-icons/md";
-// import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
+// import { useTripContext } from "../../context/TripContext";
 
-// export const Continent = ({ continent }) => {
-//   return (
-//     <Link className="continent-card" to={`/continent/${continent.name}`}>
-//       <div className="image-container">
-//         <img src={continent.image} alt={continent.name} />
-//       </div>
-//       <div className="detail-container">
-//         <MdLocationOn />
-//         <p>{continent.name}</p>
-//       </div>
-//     </Link>
+export const DestinationDetail = ({ continent }) => {
+  const { destinationName } = useParams();
+//   const places = useTripContext();
+//   const findDestination = places?.continents.find((continent) =>
+//     continent.countries.find((country) =>
+//       country.destinations.find(({ name }) => name === destinationName)
+//     )
 //   );
-// };
+
+  console.log(destinationName);
+  return (
+    <div className="homepage">
+        <h2 className="continent-heading">{destinationName}</h2>
+    <div>
+      <div>
+        <img alt="img" />
+      </div>
+      <div>
+       <p>Description:</p>
+       <p>Ratings</p>
+       <p>Reviews</p>
+       <p>Location</p>
+       <p>Opening Hours</p>
+       <p>Ticket Price</p>
+       <a href="www.google.com" target="_blank"  rel="noreferrer">Website</a>
+      </div>
+    </div>
+    </div>
+  );
+};
