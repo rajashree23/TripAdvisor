@@ -10,7 +10,7 @@ function App() {
       <Route path="/" element={<Homepage />} />
       <Route path="/continent/:continentName" element={<Country />} />
       <Route path="/country/:countryName" element={<Destination />} />
-      <Route path="/destination/:destinationName" element={<DestinationDetail />} />
+      <Route path="/:countryName/:destinationName" element={<DestinationDetail />} />
     </Routes>
   );
 }

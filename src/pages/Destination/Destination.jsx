@@ -21,7 +21,7 @@ export const Destination = () => {
         </div>
         <div className="continent-container">
           {findCountry.destinations.map((destination) => (
-            <DestinationCard destination={destination} key={destination.id} />
+            <DestinationCard destination={destination} key={destination.id} countryName={countryName} />
           ))}
         </div>
       </div>
